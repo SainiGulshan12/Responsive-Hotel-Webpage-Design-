@@ -1,0 +1,133 @@
+/* Responsive webpage CSS */
+
+@media(max-width:1170px){
+    #Menu, #vegetables{
+        flex-direction: column;
+        
+    }
+    #navbar ul{
+        margin-left: 50%;
+    }
+    #Home{
+        height: 460px;
+    }
+    #Home p{
+        font-size: 15px;
+    }
+    #Home h1{
+        font-size: 20px;
+    }
+    #Homepage{
+        margin-top: 18%;
+        margin-bottom: 9%;
+        margin-right: 8%;
+        margin-left: 8%;
+    }
+    .orderbtn{
+        border: 2px solid #fff;
+        font-size: 13px;
+        border-radius: 20px;
+        padding: 10px 25px 10px 25px;
+    }
+}
+
+@media(max-width:852px){
+    #navbar{
+        flex-direction: column;
+        height:70px;
+    }
+    #navbar ul{
+        margin: 0px;
+        margin-top:25px;
+    }  
+}
+@media(max-width:395px){
+    #navbar ul li a{
+        font-size:1rem;
+        padding:5px 15px
+    }
+}
+@media(max-width:270px){
+    #navbar ul li a{
+        font-size:1rem;
+        padding:0px 7px
+    }
+}
+@media(max-width:650px){
+    .title1{
+        font-size:25px;
+    }
+    #Order form{
+        width:70%;
+    }
+    form .input_box{
+        width:75%;
+        font-size:13px;
+         margin:4% 10% 4% 10%;
+    }
+    form .input_textarea{
+        height:18vh        
+    }
+    #Order button{
+        width:30%;
+        height:35px;
+        font-size:72%;
+        margin-left:10%;
+    }
+}
+@media(max-width:400px){
+    footer{
+        margin:-70px 0px;
+    }
+}
+@media(max-width:310px){
+    footer{
+        font-size: 14px;
+    }
+    .icons i{
+        font-size:19px;
+    }
+}
+@media(max-width:900px){
+    #about .aboutus{
+        display:block;
+    }
+    #about .parabtn img{
+        height:250px;
+        width:350px;
+        padding:0px 0px
+    }
+}
+@media(max-width:450px){
+    #about .parabtn img{
+        height:120%;
+        width:120%;
+        padding:0px 0px
+    }
+}
+@media(max-width:650px){
+    .aboutus .parabtn p{
+        margin:0px -60px
+    }
+    #about .aboutus .parabtn button{
+        margin:18px -60px;
+    }
+}
+@media(max-width:1100px){
+    #about .aboutus .parabtn button{
+        width: 19vh;
+        height: 8%;
+        /* margin-left:-25% */
+    }
+}
+@media(max-width:400px){
+    .Menu img{
+        height:90%;
+        width:90%;
+    }
+    .Menu {
+        margin: 10px 30px;
+        grid-template-rows: auto 1fr;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    }
+}

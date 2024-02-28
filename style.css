@@ -1,0 +1,311 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;   
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navaigation bar */
+
+#navbar{
+    background-color: rgba(0, 0, 0, 0.9);
+    display:flex;
+    align-items:center;
+    padding: 10px 20px;
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    width: 100%;
+    position: fixed;
+}
+#logo{
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: auto;
+}
+#navbar ul {
+    display: flex;
+    font-style: italic;
+    margin-left: 65%;
+    position: fixed;
+    cursor: pointer;
+    list-style-type: none;
+}
+#navbar ul li{
+    display: inline;
+    font-size: 20px;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    color: #ffffff;
+    padding:3px 22px;
+    border-radius: 15px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Homepage section*/
+
+header{
+    background-image: url(./images/Res.jpg);
+    height: 600px;
+    background-size: cover;
+    width: 100%;
+}
+
+#Homepage{
+   text-align: center;
+   margin: 16%;
+   color: #ffffff;
+   font-size: 20px;
+   position: absolute;
+ 
+}
+
+.orderbtn{
+    background-color: blue;
+    color: #ffffff;
+    border: 3px solid #fff;
+    font-size: 16px;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 15px 29px 15px 29px;
+    cursor: pointer;
+}
+
+.orderbtn:hover{
+    padding: 15px 33px 15px 33px;
+    border: 4px solid #ffffff;
+}
+
+.orderbtn :active{
+    padding: 15px 31px 15px 31px;
+}
+
+/* Menu section*/
+
+#Menu{
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+    display: grid;
+    border-radius: 20px;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    background-color: #f5f2f2;
+
+}
+
+.Menu-heading{
+    /* background-color: #f5f2f2; */
+    color: #373333;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 30px;
+    grid-column: 1/-1;
+}
+.Menu{
+    display: grid;
+    margin: 10px 20px;
+    grid-template-rows: auto 1fr;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    position: relative;
+}
+.Menu img{
+    height: 300px;
+    width: 320px;
+    border-radius: 15px 15px 15px 0;
+    position: relative;
+}
+
+.Menu .fastfood1{
+    padding: 20px 10px;
+    display: grid;
+    grid-template-rows:auto 1fr 50px;
+    row-gap: 15px;
+}
+
+.Menu .fastfood1 .fastfood-dish{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.Menu .fastfood1 .fastfood-dish h5{
+    font-size: 20px;
+}
+
+.Menu .fastfood1 p{
+    color: #6f6f6f;
+    font-size: 16px;
+    line-height: 1.6rem;
+}
+
+.Menu .fastfood1 button{
+    background-color: #e01c2d;
+    color: black;
+    border: none;
+    width: 180px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.Menu .fastfood1 button:hover{
+    border: 4px solid blue;
+    color: #ffffff;
+}
+
+.Menu .fastfood1 button:active{
+    margin: 2px;
+}
+/* 2nd Menu section */
+
+#Vegetables{
+    margin: 20px 0px 20px 0px;
+    text-align: center;
+    display: grid;
+    border-radius: 20px;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    background-color: #f5f2f2;
+  
+}
+
+.veg-heading{
+    background-color: #f5f2f2;
+    color: #373333;
+    padding: 10px 0px 10px 0px;
+    margin-bottom: 30px;
+    grid-column: 1/-1;
+    border-radius: 20px;
+}
+
+/* About Section */
+
+#about .title{
+    text-align: center;
+    padding: 30px 0px 30px 0px;
+}
+#about .aboutus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px 100px;
+}
+#about .aboutus .parabtn{
+    flex: 1;
+}
+
+#about .parabtn img{
+    height: 32vw;
+    width: 65vh;
+}
+
+#about .parabtn button{
+    width: 17vh;
+    height: 3vw;
+    margin: 30px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    border: none;
+    padding: 10px 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+#about .parabtn button:hover{
+    background-color: #00ffff;
+    color: #000000;
+    border: 2px solid black;
+}
+
+/* Order Section */
+
+#Order{
+    background-color: #f5f2f2;
+    color: #373333;
+    height: 100vh;
+
+}
+.title1{
+    text-align: center;
+    padding: 40px 0px 20px 0px;
+    margin-bottom: 20px;
+}
+#Order form{
+    width: 450px;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 0px rgb(155, 153, 150);
+    border-radius: 20px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.input_box{
+    width: 350px;
+    height: 35px;
+    display: flex;
+    margin: 20px 45px 10px 45px;             /*  top right bottom left */
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid #6f6f6f;
+    font-size: 15px;
+}
+
+.input_textarea{
+    height: 150px;
+}
+#Order button{
+    width: 140px;
+    height: 40px;
+    margin-left:45px;
+    background-color: #00ffff;
+    color: #000000;
+    border-radius: 20px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+
+#Order button:hover{
+    background-color: #000000;
+    color: #fff;
+}
+
+/* Footer Section */
+
+footer{
+    background-color: #373333;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+.design{
+    margin-left: -12px;
+    margin-top: 5px;
+}
+
+.icons i{
+    font-size: 25px;
+    color: #fff;
+    margin-left: 10px;
+    transition: 0.3s;
+    list-style: none;   
+}
+.icons i:hover{
+    transform: scale(1.3);
+    color: #dd0707;
+}
+
